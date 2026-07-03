@@ -1,0 +1,4669 @@
+ERROR:root:File issue: name 'pd' is not defined
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message bc5803d7-2cd3-45dc-94a1-02ecd70c0543
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message 50e09860-493b-487d-950c-5e0a1fc94960
+INFO:flwr:
+INFO:flwr:Received: train message d00e085d-da68-4879-810b-3b9f39f6735a
+INFO:flwr:
+INFO:flwr:Received: train message 3baf39c3-039c-494b-bb4f-4b2d760034a5
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message edb44692-2163-4f0b-87b6-2fb8b501c759
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: evaluate message 466cb0be-f029-4881-b00d-c24e5098f588
+INFO:flwr:Received: evaluate message 4ef133cb-8ae0-488d-9290-0bba8960cc6c
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 0d474ec6-e674-44ee-814e-2d1d4b7af3e8
+INFO:flwr:
+INFO:flwr:Received: train message 50be3fa6-16fb-4f08-b1e6-6d33f99c82e7
+INFO:flwr:
+INFO:flwr:Received: train message 3438f8a3-8d31-476f-b10f-f3fd4a2b8557
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 685d5a0a-efd4-4d5f-9ff1-faffa66aa3cc
+INFO:flwr:
+INFO:flwr:Received: evaluate message 3ff7d953-bf5e-4da7-97fb-6961e4aca100
+INFO:flwr:
+INFO:flwr:Received: evaluate message 9a98b8f0-011c-4937-ab6d-4e7213d155bd
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message e621a49b-5290-4979-b538-1e4cf230897a
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: train message 02d91fcf-b2ae-492e-b6b2-65612f3d9a8f
+INFO:flwr:Received: train message 8e2fbd9d-0157-4831-ab0e-e9ab4f54fbe7
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message bac47097-d275-4b66-9b84-d16899587f33
+INFO:flwr:
+INFO:flwr:Received: evaluate message 300d2687-8870-4832-b538-f11be3bb821e
+INFO:flwr:
+INFO:flwr:Received: evaluate message b2c85a8b-be3b-4a32-9e36-92d85e01be97
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 50.58s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09966666748126347
+INFO:flwr:		round 2: 0.09761666754881541
+INFO:flwr:		round 3: 0.09735000133514404
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 76f7e3b2-1c05-4ffa-a68d-4f10c0d4b780
+INFO:flwr:
+INFO:flwr:Received: reconnect message 1d4d84ec-da59-4ba1-a984-5a3e338a3610
+INFO:flwr:
+INFO:flwr:Received: reconnect message f6fc8bfa-a4d0-46e3-a26f-bb3d68c94e95
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message e48973f5-e786-42ee-ae66-07ea17bc67ea
+INFO:flwr:Sent reply
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message ec26fe6a-0854-4a92-86d6-bd90df2dedf0
+INFO:flwr:
+INFO:flwr:Received: train message 98ae9cf3-501f-499f-a344-f7c45e695378
+INFO:flwr:
+INFO:flwr:Received: train message 39a40268-3628-4610-a74e-1334ce2695b0
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message f21cc9ae-aa14-4938-a99d-6a048f6105cf
+INFO:flwr:
+INFO:flwr:Received: evaluate message 5d53454d-a301-490e-84e4-9e8ec687b2f7
+INFO:flwr:
+INFO:flwr:Received: evaluate message d869cc6c-c2e6-4b79-8c40-786e97a08475
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message fc511ea2-e608-42de-ba96-4c683d5a2a32
+INFO:flwr:
+INFO:flwr:Received: train message 67af81d7-9784-4d3c-ad7b-d2183b908a3a
+INFO:flwr:
+INFO:flwr:Received: train message eaaf0968-15a8-4acd-a6fc-1fb43a4c2398
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 050fe7a7-9762-4d5c-b314-ecedfa1f2d08
+INFO:flwr:
+INFO:flwr:Received: evaluate message 44dc5956-45bd-44a3-a365-3374ecf40c99
+INFO:flwr:
+INFO:flwr:Received: evaluate message 6e4f4503-28de-47a0-95bc-5e8f0ef9a00d
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 7a486d94-c0af-47e1-9eb2-01d4b3b58db3
+INFO:flwr:
+INFO:flwr:Received: train message a02b80b6-c393-4d82-b71c-a453dd052c63
+INFO:flwr:
+INFO:flwr:Received: train message 3b68b0ea-3463-489f-b6e7-e8e2694cd066
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 52e329e2-70ad-4d82-9346-3f4e0e1a3f73
+INFO:flwr:
+INFO:flwr:Received: evaluate message 19706c2c-90b1-4f16-95e3-60bf9270c841
+INFO:flwr:
+INFO:flwr:Received: evaluate message e4984188-4025-4917-8023-aaa89e18e28d
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 45.38s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09966666748126347
+INFO:flwr:		round 2: 0.09735000133514404
+INFO:flwr:		round 3: 0.09966666748126347
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 6b0c2f9f-1131-4b0e-9ae8-ae817c6deb8c
+INFO:flwr:
+INFO:flwr:Received: reconnect message f595a5be-646b-45fb-afa4-859288c0f0fb
+INFO:flwr:
+INFO:flwr:Received: reconnect message 7eb7d4f3-a795-4b3a-bf10-277234c351f2
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message bdd42e93-a912-4798-b3f0-e3aebf3b0746
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Sent reply
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+DEBUG:flwr:ChannelConnectivity.IDLE
+INFO:flwr:[ROUND 1]
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message 2a9480b0-63c2-4e6c-bb8f-da8ea1bfe618
+INFO:flwr:
+INFO:flwr:Received: train message 039af0f5-751c-4396-9167-fb15cb9b0801
+INFO:flwr:
+INFO:flwr:Received: train message 94d93499-2c57-4beb-8941-4a4117a46202
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 379bea9a-4f8c-4de9-9956-3abe7d570f3a
+INFO:flwr:
+INFO:flwr:Received: evaluate message f4c7823f-46cb-4e45-b7af-1f98154b1983
+INFO:flwr:
+INFO:flwr:Received: evaluate message b2a9691e-da85-456a-88fb-def3f73eeb2b
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 72d93455-4700-4240-87ac-05213ad51a67
+INFO:flwr:
+INFO:flwr:Received: train message 48b0cbd2-f5c3-4690-846e-0251097da422
+INFO:flwr:
+INFO:flwr:Received: train message 192886b6-ff94-4286-8dea-293cae5d2906
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 4fd17440-907b-4fe4-ab53-af82596c327c
+INFO:flwr:
+INFO:flwr:Received: evaluate message e9b78c5f-af81-4a25-a7e5-8fea05718c58
+INFO:flwr:
+INFO:flwr:Received: evaluate message 6b8d3627-4404-4e70-928c-c5ba0dbb153f
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message d25de6a6-6464-4958-83a0-5bebaf9c8ed5
+INFO:flwr:
+INFO:flwr:Received: train message ddb21d76-b7c0-492a-b9c4-1383daf4ef69
+INFO:flwr:
+INFO:flwr:Received: train message 0eb1f292-149c-453f-8c25-4cd51c29142b
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 05b4d4d4-96dc-481d-8e8a-28288cdd85b7
+INFO:flwr:
+INFO:flwr:Received: evaluate message e6af56da-bfc4-4a33-8132-cdec263ec7e9
+INFO:flwr:
+INFO:flwr:Received: evaluate message bcb841bf-ba72-4b29-a96f-c00c9a8d95a7
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 56.47s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.10601666569709778
+INFO:flwr:		round 2: 0.10634999970595042
+INFO:flwr:		round 3: 0.10601666569709778
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message f86f292f-9b4d-4372-a321-207f1e386499
+INFO:flwr:
+INFO:flwr:Received: reconnect message 73a2e188-da37-4768-a0a2-7a6122e29c06
+INFO:flwr:
+INFO:flwr:Received: reconnect message 644acb32-d6f4-43e5-943a-a3f410a319c9
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message 0e3bb219-9bb7-4f98-a074-b40c00e26fc8
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message ae939630-b7d8-4074-a222-859e6c936722
+INFO:flwr:
+INFO:flwr:Received: train message ff96cfe3-6b2d-400d-80e9-3502d75f7bc1
+INFO:flwr:
+INFO:flwr:Received: train message 07ee7854-4ed9-4762-846d-dc77e851a992
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 261f7450-003c-473a-8ca0-d32f43058235
+INFO:flwr:
+INFO:flwr:Received: evaluate message 5a658e67-8bfc-4d81-8684-f7fe961c8b40
+INFO:flwr:
+INFO:flwr:Received: evaluate message 62c261be-9d15-40bd-ac70-5addc70354d7
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message a6767cfa-5834-4921-941d-ba25d51448bc
+INFO:flwr:
+INFO:flwr:Received: train message 74f21ec4-25d5-4236-8509-0b259e6076c8
+INFO:flwr:
+INFO:flwr:Received: train message 50bfe919-d619-430c-9dd8-bcc730332ffe
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 6556935a-6102-40b7-a1a2-0bd60cdd533d
+INFO:flwr:
+INFO:flwr:Received: evaluate message 3e97a714-9072-49a5-9cff-62a35c0646a4
+INFO:flwr:
+INFO:flwr:Received: evaluate message ff3af37c-1916-4f43-abd1-fafc865ccda7
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message e93d7411-2033-4805-870a-729f1b1b287c
+INFO:flwr:
+INFO:flwr:Received: train message 2be859ac-40e1-4a88-950a-c453794658c9
+INFO:flwr:
+INFO:flwr:Received: train message 626cb05a-a600-4e92-9fe5-b369cb485d31
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: evaluate message 13374e52-8d4d-4adc-bf25-8a4502444cd4
+INFO:flwr:Received: evaluate message 8119cba3-eb40-4590-9a69-e222c114640e
+INFO:flwr:
+INFO:flwr:Received: evaluate message f36539bd-4f36-4a61-b558-7d3be7991a03
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 306.77s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.10182666530211766
+INFO:flwr:		round 2: 0.10212166359027226
+INFO:flwr:		round 3: 0.10182666530211766
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 990088b2-2e23-4ebd-8599-6b82f0459001
+INFO:flwr:
+INFO:flwr:Received: reconnect message 2d14cb77-5f71-4730-9dd4-58f7da4696d7
+INFO:flwr:
+INFO:flwr:Received: reconnect message 90c58216-8eb8-47d5-b4b9-e18a9a083fe5
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message d004733b-ab94-427d-9f31-a22a21e7e6b7
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message 53b2ed28-badd-4602-b2a0-e3ab6ee7faf7
+INFO:flwr:
+INFO:flwr:Received: train message d608cafe-2b6a-4a5b-b6f9-ac39c7ab7576
+INFO:flwr:
+INFO:flwr:Received: train message e8b3c3bc-140a-4c08-806d-6cc90f4446c8
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 01bbf199-f638-4876-bd1d-83f955e051e6
+INFO:flwr:
+INFO:flwr:Received: evaluate message b0db30b0-8b00-4a39-a069-d63b037f2148
+INFO:flwr:
+INFO:flwr:Received: evaluate message 4f4c502b-5e6c-4c1c-861d-ff2014911bb7
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 504cfd3b-6120-4c6d-90c4-1d851a458077
+INFO:flwr:
+INFO:flwr:Received: train message 4fd20843-d35b-4100-a803-03799793e8d5
+INFO:flwr:
+INFO:flwr:Received: train message 49e456fc-1468-4ca2-9d27-eb9a97865d1c
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message a15ff292-8077-41c4-8959-adf6c5e81f1e
+INFO:flwr:
+INFO:flwr:Received: evaluate message c6ccc69e-6dc8-48d8-98cc-e5b5e8408b5b
+INFO:flwr:
+INFO:flwr:Received: evaluate message 4a988376-c442-4ba0-bada-802f43e6cbe6
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 98f511f7-330d-42c8-85ba-26663e2f28d5
+INFO:flwr:
+INFO:flwr:Received: train message 14ea3422-9811-466d-96f9-caa255a43439
+INFO:flwr:
+INFO:flwr:Received: train message 700f4284-f121-49d2-8f23-ca147adad84d
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 664f46ae-67d3-4c6f-9403-0afeb775aa2f
+INFO:flwr:
+INFO:flwr:Received: evaluate message 13d36d79-5633-4671-8409-84dddfb89a63
+INFO:flwr:
+INFO:flwr:Received: evaluate message 65b61ef2-c4de-4b86-b9eb-3acd129b4696
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 276.99s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09290499985218048
+INFO:flwr:		round 2: 0.09265166521072388
+INFO:flwr:		round 3: 0.09265166521072388
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 221ee959-570c-401e-acad-721da6499c7b
+INFO:flwr:
+INFO:flwr:Received: reconnect message 55503a59-b801-408c-af6b-38d556b36d0d
+INFO:flwr:
+INFO:flwr:Received: reconnect message 027e472a-c339-41e1-9533-81471069ec0c
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message 9b5896a8-ad1d-46dc-b0df-b70657bd7b78
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.READY
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message fe0472a1-efe3-4995-94d7-d87a64b97039
+INFO:flwr:
+INFO:flwr:Received: train message 33c4b5d4-f185-4a30-9769-90156cbebf17
+INFO:flwr:
+INFO:flwr:Received: train message 66f17b3b-a76e-4183-a9b5-1d3dc43dc10e
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 31f4c9af-49fe-4f26-8373-a2de8587fe74
+INFO:flwr:
+INFO:flwr:Received: evaluate message 90d8e005-0478-4ddc-8cf5-617bb57b026e
+INFO:flwr:
+INFO:flwr:Received: evaluate message 8baab023-e2a2-460b-9d38-d7952c1d51ae
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message fb74c6fe-b796-4ae3-95aa-6fdb802b622a
+INFO:flwr:
+INFO:flwr:Received: train message 7bbd1d91-79b1-4b8b-aab8-39238500fea3
+INFO:flwr:
+INFO:flwr:Received: train message fc7e0338-60a6-4a70-8bd2-1de541124519
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 0ebccde0-15b1-47cf-87c3-b384511716b1
+INFO:flwr:
+INFO:flwr:Received: evaluate message 3652470d-e45a-408d-9ecc-849a75c5e62e
+INFO:flwr:
+INFO:flwr:Received: evaluate message a4a10ff3-9073-4c40-bd56-c77c74ee9e73
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 8134214e-90c0-43b9-af21-5ea71d99eb80
+INFO:flwr:
+INFO:flwr:Received: train message efdd5003-2dca-4f43-bf80-f9e1206df761
+INFO:flwr:
+INFO:flwr:Received: train message 4d7c2346-5e86-4cce-8e31-44f165ec3c95
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message be40fe4e-1182-4237-a0b4-da5843391f69
+INFO:flwr:
+INFO:flwr:Received: evaluate message e4593104-2453-4d7f-8570-e1d06f8e186c
+INFO:flwr:
+INFO:flwr:Received: evaluate message 2712e33c-4f76-4024-a81e-77a3f2279002
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 286.30s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09074666599432628
+INFO:flwr:		round 2: 0.09143333385388057
+INFO:flwr:		round 3: 0.09143333385388057
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 81de040f-5313-443b-a773-5efc20ec1a8d
+INFO:flwr:
+INFO:flwr:Received: reconnect message 9e415229-3a7f-4fb7-aff1-0fe9b4cf673c
+INFO:flwr:
+INFO:flwr:Received: reconnect message 775fe508-6a66-44e4-80d8-82074bb5dfc0
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message de328e92-56dc-4555-8381-b37a0447d6e0
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 3a630b13-ef1b-4b9b-9f5e-ac8e63d5f933
+INFO:flwr:
+INFO:flwr:Received: train message 2806240b-e3ff-4411-873d-f7dda765f4a0
+INFO:flwr:
+INFO:flwr:Received: train message 8c8d1c0a-71a0-4a34-b341-bc271fa557fb
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message bfbbb939-4181-4d9e-a869-b2e7694a7266
+INFO:flwr:
+INFO:flwr:Received: evaluate message 5e78cfad-10fd-47ff-bf79-c6b9692ba3c9
+INFO:flwr:
+INFO:flwr:Received: evaluate message 3e0d8d72-61cc-4e65-b7db-3a8867d3cc01
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 3ed672b8-8f5e-4d58-86c7-0f30ea96a531
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: train message f0d0a91b-60ac-4e0e-a3b7-2e1c4cde86b0
+INFO:flwr:Received: train message 9ec56850-3fc2-4d51-9f3d-67651764bb0d
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message f641d89c-c952-462a-b772-a1a184b83520
+INFO:flwr:
+INFO:flwr:Received: evaluate message 510ef68e-9a21-4e1d-b1e8-b7cfd8164b6f
+INFO:flwr:
+INFO:flwr:Received: evaluate message 90f16947-6811-4f06-abd3-484c8355c4cd
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message cabb9715-37c5-4b5e-aae0-f6a175657008
+INFO:flwr:
+INFO:flwr:Received: train message 964aaa53-970e-433d-ba6e-cc4300343377
+INFO:flwr:
+INFO:flwr:Received: train message 00d89133-8827-4a80-869c-94bf7588283c
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 59e23c24-5e5a-43d1-ad3b-ac4cf29f053e
+INFO:flwr:
+INFO:flwr:Received: evaluate message 08d38669-d986-43f4-9bb7-24221889c8c5
+INFO:flwr:
+INFO:flwr:Received: evaluate message de04ea32-7492-482e-88b3-d7e85f9ca37b
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 466.92s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09047500044107437
+INFO:flwr:		round 2: 0.09047500044107437
+INFO:flwr:		round 3: 0.09103916585445404
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message a2b198c8-1f9e-4254-b8c6-4f2a5000531d
+INFO:flwr:
+INFO:flwr:Received: reconnect message 7a9fe535-b4d8-40c4-8654-5f79a39bdc71
+INFO:flwr:
+INFO:flwr:Received: reconnect message 7b04fe79-474e-4f80-8051-3fe9ea2cc3f3
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message 99d7fd96-036f-4ef9-b112-03d311fdc72a
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message 7eb9ba4b-47c1-4cdd-822e-62e5fc4d2126
+INFO:flwr:
+INFO:flwr:Received: train message 4fc8e559-563c-48ec-beed-a8af1c4d1f1d
+INFO:flwr:
+INFO:flwr:Received: train message fcfaea17-ddf0-4c38-9781-5f92253faf6a
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 216bd51c-6b60-47b9-bf3b-d739089f9066
+INFO:flwr:
+INFO:flwr:Received: evaluate message 035f5c47-cf53-444d-9bf8-f85914b71ab4
+INFO:flwr:
+INFO:flwr:Received: evaluate message 774e3262-d330-443b-96e8-59b9f5d17209
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message cc6e55b6-2fb7-4756-9dd7-2c043639e813
+INFO:flwr:
+INFO:flwr:Received: train message 32ea412c-54e0-45a7-9567-57a8167847e1
+INFO:flwr:
+INFO:flwr:Received: train message aa6434a2-ee53-4a86-930b-e98d708bed5e
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message aa8e712f-64dd-420f-80a3-ad2806a88b40
+INFO:flwr:
+INFO:flwr:Received: evaluate message a643031c-cba3-4776-b576-441ffd4816d7
+INFO:flwr:
+INFO:flwr:Received: evaluate message edb51053-2c09-45e6-9813-e4ff51ff9d03
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 1795318b-49f1-4106-95b6-1a6aaaaf5f54
+INFO:flwr:
+INFO:flwr:Received: train message b47c283c-37c0-4e4b-80fb-b4b0ff820375
+INFO:flwr:
+INFO:flwr:Received: train message 667826b3-5412-44a7-8018-822723cac16d
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 5d045845-875a-44c2-abe4-7e292f0e1a9f
+INFO:flwr:
+INFO:flwr:Received: evaluate message 6bbb8e79-6aef-46f7-9dcb-b2f214a2fb8a
+INFO:flwr:
+INFO:flwr:Received: evaluate message 1f1d3dd7-7569-462b-9352-94a838055530
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 368.56s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09103916585445404
+INFO:flwr:		round 2: 0.09047500044107437
+INFO:flwr:		round 3: 0.09103916585445404
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 86c0b774-4cea-435c-9dcd-996822c6b9e4
+INFO:flwr:
+INFO:flwr:Received: reconnect message b4fa5f75-965b-4847-9c39-83832ef82099
+INFO:flwr:
+INFO:flwr:Received: reconnect message baabea20-a930-4009-bf31-2f4bcbbb3d38
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message 569da297-0ca6-4277-a02c-d3c3ca06d6d3
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message 82e2c1d0-617d-4895-802f-7eb5f80351cc
+INFO:flwr:
+INFO:flwr:Received: train message 6d36422b-385c-4b12-8589-7b10dd6352b7
+INFO:flwr:
+INFO:flwr:Received: train message 331b81c0-8268-4b42-97f2-c87aacfcb723
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message df5e6616-d8ef-4d25-b918-f1104f454cb4
+INFO:flwr:
+INFO:flwr:Received: evaluate message e81ef450-18f0-46cd-bebe-ead2d185c1e7
+INFO:flwr:
+INFO:flwr:Received: evaluate message 28ede832-e691-4edd-8c75-14726ec314c6
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 4e8777bb-1d9b-4520-a6d5-27a43daa0318
+INFO:flwr:
+INFO:flwr:Received: train message 7169246c-1f40-4d89-b4cf-298e9aecabca
+INFO:flwr:
+INFO:flwr:Received: train message 43b7071a-9f8c-4d48-b2fd-cde053e5bfeb
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 131b528b-e4f7-48c1-b797-f69fbabc5886
+INFO:flwr:
+INFO:flwr:Received: evaluate message 1f4e5fa2-e487-4755-9384-a78fb3fa566b
+INFO:flwr:
+INFO:flwr:Received: evaluate message f0b35808-75bc-45f2-8364-231df8dee024
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 68f4e7cd-2a82-441b-bff1-e3baa12c7d18
+INFO:flwr:
+INFO:flwr:Received: train message 60b6128b-f6c4-4170-95db-8c8a74cfa44d
+INFO:flwr:
+INFO:flwr:Received: train message c9e4f0d8-a753-4299-9a59-ba5c98b98611
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 5459619e-b59e-41dc-9b57-43c384bf7dfd
+INFO:flwr:
+INFO:flwr:Received: evaluate message f9cf2e5e-497a-44b1-abf1-bc29842b56af
+INFO:flwr:
+INFO:flwr:Received: evaluate message 25415bf3-8180-43ab-ad62-98117e79bc21
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 373.89s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09104166676600774
+INFO:flwr:		round 2: 0.09029250095287959
+INFO:flwr:		round 3: 0.09104166676600774
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message aef96955-43e9-461e-8183-b268df97bdb7
+INFO:flwr:
+INFO:flwr:Received: reconnect message 8318347f-7c0a-4a1e-8b1f-25f924cd94ec
+INFO:flwr:
+INFO:flwr:Received: reconnect message 759141aa-8d48-465c-91c7-3ba0bb5d9f7e
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message 3dbe4fc3-c413-4f45-b9bd-4f4b19b7af39
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message 641427c3-642e-40e9-8d5b-b55e572f2677
+INFO:flwr:
+INFO:flwr:Received: train message 712b0a36-1de9-4d23-8e99-de85ffefb6e5
+INFO:flwr:
+INFO:flwr:Received: train message 7a1ba2a8-f0d6-4e8c-b311-999234df7937
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 49125cba-f56d-4251-a525-616e17b00fcd
+INFO:flwr:
+INFO:flwr:Received: evaluate message 035f5404-f3a5-40c4-b4d4-a3f90681fd81
+INFO:flwr:
+INFO:flwr:Received: evaluate message 13875fae-c69c-4c22-8471-c5b75fe9d5a1
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message a463ca27-3e82-4e8e-8236-0dd234b9812d
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: train message c3ad0115-a9b3-4ca9-96c4-d1da57c3e9c7
+INFO:flwr:Received: train message ca1782e5-c300-48ff-99fc-62c287010419
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 4e78168e-e480-4cd8-b4d7-5622d0144456
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: evaluate message a3f63a4d-ccd9-4c28-b0ac-389cd86ce4bb
+INFO:flwr:Received: evaluate message a957bec0-4817-4b59-bb5e-8b8c7fcf49e8
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message e7e9c455-5a52-4b38-882e-062b7add563a
+INFO:flwr:
+INFO:flwr:Received: train message 449f9400-3916-4c15-bf5c-6a723dc85cfd
+INFO:flwr:
+INFO:flwr:Received: train message 568aeb0f-8542-4a36-a293-f0e6ac78e009
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 460c008f-5f09-4b27-b3f9-977527433bae
+INFO:flwr:
+INFO:flwr:Received: evaluate message 59890cbc-3587-4a60-8737-fe2c3a3bc680
+INFO:flwr:
+INFO:flwr:Received: evaluate message 44d8999e-25a9-4587-9731-c3820b82e450
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 152.53s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.0915916661421458
+INFO:flwr:		round 2: 0.0902549996972084
+INFO:flwr:		round 3: 0.09089333315690358
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message a1fdb51f-d671-4c5b-b3da-3f9fbfbc23c3
+INFO:flwr:
+INFO:flwr:Received: reconnect message 24f72cf1-1f14-4b20-ae91-958063b81013
+INFO:flwr:
+INFO:flwr:Received: reconnect message 3c981f44-72dd-4d76-9ccb-afcc83928600
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=4, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (4 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message be10aca1-b44b-4d1d-bfe5-d08ca8958c8b
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message 39f4e21a-222b-4131-94a6-05f886671a73
+INFO:flwr:
+INFO:flwr:Received: train message 4d5764a0-d5db-4bb4-8207-adf095c41235
+INFO:flwr:
+INFO:flwr:Received: train message aa84e901-2548-4069-8cef-cbd4a1469367
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 46050be2-2496-4ce3-857e-4b3c33edff3a
+INFO:flwr:
+INFO:flwr:Received: evaluate message 952e4958-e198-4b5b-857b-02705fb5bc6f
+INFO:flwr:
+INFO:flwr:Received: evaluate message 9128fccc-d430-49f4-8847-ee547e9709a2
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message fec519a5-943f-4e34-a41c-e52f8a73a626
+INFO:flwr:
+INFO:flwr:Received: train message 3ea49ab7-cb54-485b-9308-793c95c25225
+INFO:flwr:
+INFO:flwr:Received: train message 67be4da5-277b-4dc8-a5a3-7b98e119f3ff
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message abaea63f-b983-4cb4-9294-1f314c6ffeb0
+INFO:flwr:
+INFO:flwr:Received: evaluate message 95f029fa-9d2e-41b6-8ac1-79bb587d0a81
+INFO:flwr:
+INFO:flwr:Received: evaluate message f148b193-ea2a-4acb-b4e7-c6d20ef84fb1
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message acb0d11e-d471-4e73-aabb-992ec71213d1
+INFO:flwr:
+INFO:flwr:Received: train message 10b4052a-1ecc-4f89-8b5f-22cd561eae53
+INFO:flwr:
+INFO:flwr:Received: train message 3c8c6457-cdcc-4e87-8859-38262841d32e
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 5e3d7677-f302-4913-be53-000efc69bbae
+INFO:flwr:
+INFO:flwr:Received: evaluate message a8875e11-c8fc-44fe-878b-043d3b3667d4
+INFO:flwr:
+INFO:flwr:Received: evaluate message b659805b-51ab-4ffd-ae21-db2fd0b1c2d5
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 4]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 213c3e9f-e3b0-4a13-978a-d3951a42484d
+INFO:flwr:
+INFO:flwr:Received: train message 799b381a-4005-4d94-9617-b8f95ee87426
+INFO:flwr:
+INFO:flwr:Received: train message 0849ba21-f0d5-4cb2-8162-0a56c4c4a069
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 24ee1295-c902-4075-87c9-879aa01ce3ea
+INFO:flwr:
+INFO:flwr:Received: evaluate message 0896623b-bd8b-4e6b-9fd9-1eb1965a25d7
+INFO:flwr:
+INFO:flwr:Received: evaluate message ac98fb03-9002-45b2-8546-df64ab743414
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 4 round(s) in 224.34s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09029999872048695
+INFO:flwr:		round 2: 0.09074666599432628
+INFO:flwr:		round 3: 0.09143333385388057
+INFO:flwr:		round 4: 0.09143333385388057
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message f5ef21a1-54bc-4f4c-ac64-7180996d2b0f
+INFO:flwr:
+INFO:flwr:Received: reconnect message e11ff8c4-4abe-42d2-9324-c69e7a407536
+INFO:flwr:
+INFO:flwr:Received: reconnect message 09fd646f-3f64-46c6-8d9b-ad30076a5e2e
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=5, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (5 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message ec2a6301-067d-411a-b831-6cdbf268d8f7
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message 1130f234-7a67-4277-addc-c4ada48c9e05
+INFO:flwr:
+INFO:flwr:Received: train message a37aa074-906e-41d9-8c04-677deaf57314
+INFO:flwr:
+INFO:flwr:Received: train message ebd7dc54-0c94-40e9-af58-b1b3a4478c8b
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 6c3b79b8-3aa8-4047-a9e6-139698e5f6f6
+INFO:flwr:
+INFO:flwr:Received: evaluate message b7191f02-e42c-4666-87aa-7ecea1dc1f81
+INFO:flwr:
+INFO:flwr:Received: evaluate message 5fda3614-e5f5-495e-bc39-f6d13a872c83
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 011b53b0-ef25-4a76-8e22-fcd0c08c5f82
+INFO:flwr:
+INFO:flwr:Received: train message 24e37c27-a978-490e-a889-aa15cc82c265
+INFO:flwr:
+INFO:flwr:Received: train message 6ab3dc66-019d-4bd2-b8a9-c6ce3cc74344
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message ac9243d9-0cea-4a50-a679-4761c45da7bb
+INFO:flwr:
+INFO:flwr:Received: evaluate message eaf741e8-2a47-4e17-9cee-83291f269548
+INFO:flwr:
+INFO:flwr:Received: evaluate message adf127ff-e6f9-473c-8197-e05800e2d9e2
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 9c95be4a-a1c2-41f4-a38f-02f20ebae5d0
+INFO:flwr:
+INFO:flwr:Received: train message 75f6bf61-27bf-4cf8-932f-1e530a538c15
+INFO:flwr:
+INFO:flwr:Received: train message 0b272313-a53d-4aea-80b7-e5c769ee1e33
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 7137fdbb-70c2-4ff9-8a04-3c48509de0af
+INFO:flwr:
+INFO:flwr:Received: evaluate message b959d763-aa60-45d8-8c71-d3913cba51ea
+INFO:flwr:
+INFO:flwr:Received: evaluate message e5e92ab7-14d8-4e44-8bae-ad5f9be1db35
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 4]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message bc84deda-9d1b-47e9-9752-4b652f79f92d
+INFO:flwr:
+INFO:flwr:Received: train message 702deddd-1fbc-4ee7-ac42-988f2a012925
+INFO:flwr:
+INFO:flwr:Received: train message b33fe0f0-4d95-4683-a644-22817f6225c3
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 072837ce-6409-4b69-9f80-944a7b45b6ac
+INFO:flwr:
+INFO:flwr:Received: evaluate message 1c69920e-ab68-415c-abb8-f6873c7d7c74
+INFO:flwr:
+INFO:flwr:Received: evaluate message 61747a92-5fc6-429b-b053-2a78ee7ee1d8
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 5]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 7d01ca62-a598-4320-b032-7903cc21c8e4
+INFO:flwr:
+INFO:flwr:Received: train message 55e0da28-7976-4234-85bc-49e280c8808b
+INFO:flwr:
+INFO:flwr:Received: train message 095b8812-0dac-494b-b207-8f27e0400200
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 38a69370-ba51-4e1e-807c-a2164673f7e6
+INFO:flwr:
+INFO:flwr:Received: evaluate message c595e477-07e7-46e1-99f0-ec821e0f5d1c
+INFO:flwr:
+INFO:flwr:Received: evaluate message c932e19e-a730-4029-aa19-e3d454b925b4
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 5 round(s) in 388.67s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09143333385388057
+INFO:flwr:		round 2: 0.09074666599432628
+INFO:flwr:		round 3: 0.09029999872048695
+INFO:flwr:		round 4: 0.09029999872048695
+INFO:flwr:		round 5: 0.09143333385388057
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 8ad62b3d-28a0-4205-a7a4-c74463efa17a
+INFO:flwr:
+INFO:flwr:Received: reconnect message d512fb8f-7294-4ff4-8eda-87f4f190d0c6
+INFO:flwr:
+INFO:flwr:Received: reconnect message 947a9634-a999-4b9c-85cc-91ffaa03d6de
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message c1d0c726-448c-44af-974f-a10c3f3ae4d1
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 20e4f7bd-171d-43c0-9505-53dab84cc441
+INFO:flwr:
+INFO:flwr:Received: train message d4a1ea6e-63cc-4351-bb0f-d92201401bc2
+INFO:flwr:
+INFO:flwr:Received: train message e9cbcd18-6326-4c33-968b-c1296d7da4af
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 6b38d49e-474b-42ca-aa17-a0f6b8e07cc1
+INFO:flwr:
+INFO:flwr:Received: evaluate message bf289676-d47a-4baa-b258-2348206aa8d0
+INFO:flwr:
+INFO:flwr:Received: evaluate message 2bcedf53-e54e-4356-8abe-f96a42198128
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 693eae34-d9b0-4aee-8df2-d0f411d06999
+INFO:flwr:
+INFO:flwr:Received: train message 0e1f05f8-f4f5-4cdc-aba3-bad30fa6ef9d
+INFO:flwr:
+INFO:flwr:Received: train message 6224ecd1-c393-4313-b2ba-6c40882809c6
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 5ad1ec97-5bd3-4978-963d-addddea413a5
+INFO:flwr:
+INFO:flwr:Received: evaluate message 7176ca3b-3f62-46eb-9d31-af905281305b
+INFO:flwr:
+INFO:flwr:Received: evaluate message db59b719-54dc-4aaf-80ca-8ad2944bc53a
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message e0a67d9e-32c0-4e95-b7d1-0a63771aef7a
+INFO:flwr:
+INFO:flwr:Received: train message c781b4e6-dc7f-4f4b-ad46-7ece37587989
+INFO:flwr:
+INFO:flwr:Received: train message c816e628-f063-4778-acdf-f9ae9f357227
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 70659af6-8167-48fe-9fa4-89c411289c90
+INFO:flwr:
+INFO:flwr:Received: evaluate message 929f8d34-1704-4cfa-8bed-c3be1d547058
+INFO:flwr:
+INFO:flwr:Received: evaluate message 2de0d72a-041a-4c30-a362-27a8425f1ae7
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 154.04s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09300833195447922
+INFO:flwr:		round 2: 0.09270500143369038
+INFO:flwr:		round 3: 0.09300833195447922
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message b1ed7b79-c6a5-4296-bb9f-7c355887576b
+INFO:flwr:
+INFO:flwr:Received: reconnect message b8370d3f-a410-4eda-8edc-802d1d0d2668
+INFO:flwr:
+INFO:flwr:Received: reconnect message 49ae4ac6-b96c-483d-a043-554692eab2e3
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message d20fdbd0-efeb-4b4b-8410-9532d29aeaff
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 5ea4300a-83c6-4533-bfef-5ffa71403c6c
+INFO:flwr:
+INFO:flwr:Received: train message 1215fe69-88cc-413d-97cf-5172664393fb
+INFO:flwr:
+INFO:flwr:Received: train message d46c66a8-298a-4547-8d63-67fe15b9b8c5
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 6b79c05c-e19e-4bf0-90a8-33a9ae3a2bc8
+INFO:flwr:
+INFO:flwr:Received: evaluate message a80dd220-ab62-4708-bf6a-36d2ad40981d
+INFO:flwr:
+INFO:flwr:Received: evaluate message 5dbe61b0-17ca-4f5c-bd39-9ce18e619edb
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message eae75172-cd05-465f-8343-038e705ce2d7
+INFO:flwr:
+INFO:flwr:Received: train message 49af2234-0cc2-4423-bd2d-a88386d7d6ba
+INFO:flwr:
+INFO:flwr:Received: train message a5a244ff-e81a-4345-828a-37acc6905dcd
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 7137716b-6fa8-49e7-9d0a-2c59a9a416a5
+INFO:flwr:
+INFO:flwr:Received: evaluate message 7b689bc7-1686-4cb4-9673-193a699b40b6
+INFO:flwr:
+INFO:flwr:Received: evaluate message 06f13d25-32bb-4f3b-a699-f1f8ba8c00a5
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message a40f08cd-627b-4160-a2df-3171bc364420
+INFO:flwr:
+INFO:flwr:Received: train message feb8ea86-1d62-4553-8a1c-597bd10c1a4e
+INFO:flwr:
+INFO:flwr:Received: train message 57ba305f-b3ac-4402-801a-4a957588bba0
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 38ac0c7b-2ca6-41d1-bfcf-90acfc142a53
+INFO:flwr:
+INFO:flwr:Received: evaluate message 434dad62-f7ae-43b6-8424-d669aaed0fd5
+INFO:flwr:
+INFO:flwr:Received: evaluate message dd2fca6a-3faf-4797-9309-6f1910c626c5
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 157.88s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09074666599432628
+INFO:flwr:		round 2: 0.09029999872048695
+INFO:flwr:		round 3: 0.09143333385388057
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 4f69750c-5863-42c4-be1e-09c83241592c
+INFO:flwr:
+INFO:flwr:Received: reconnect message 42fbb8ea-db61-46be-87cc-fc57302193af
+INFO:flwr:
+INFO:flwr:Received: reconnect message 5550a3c2-974d-4837-848d-77ede4538b46
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message fdcf54f1-bc1b-4292-9705-594619a2fe79
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message 9d119b46-7566-4731-935e-d9471ccf043b
+INFO:flwr:
+INFO:flwr:Received: train message 18314b99-1a77-4e4e-a2f8-639a4d02801c
+INFO:flwr:
+INFO:flwr:Received: train message 94d11775-a4ea-4aa7-b4a0-c8eb5d43c5bd
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 1228d981-8a24-4e79-8cae-511efcfa52fc
+INFO:flwr:
+INFO:flwr:Received: evaluate message b3ddfaf4-fed5-4ca9-b2d8-ab26350d498a
+INFO:flwr:
+INFO:flwr:Received: evaluate message 4626c93e-0fa6-4b5b-ae66-3c7daa873c6c
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 17d02a9c-f480-4ed8-b2b8-3ce7e32e5e97
+INFO:flwr:
+INFO:flwr:Received: train message 8b695bdd-a532-4608-bfd7-c4e917eb16a0
+INFO:flwr:
+INFO:flwr:Received: train message 71626bd5-fa52-44df-8f0c-3c3ecb94c361
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message bb54f6a4-3240-4260-bf4b-01adfee6aeba
+INFO:flwr:
+INFO:flwr:Received: evaluate message ba60aa70-253b-4a19-b7d1-9c55e7d8849c
+INFO:flwr:
+INFO:flwr:Received: evaluate message 0377ee0a-39f8-476e-bc21-103428a07ec6
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message cc74b053-7286-4074-8e33-4f2126ed183a
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: train message 041609ad-c535-4a5d-82ef-6c841cc4cd5f
+INFO:flwr:Received: train message 21e27143-8a98-4bc1-80b0-e0a131b47eba
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 52cc9547-69a1-441a-930f-0204e13ba679
+INFO:flwr:
+INFO:flwr:Received: evaluate message f4e2dd9a-214c-4b27-9eac-63058fa592ff
+INFO:flwr:
+INFO:flwr:Received: evaluate message 87a0d9c2-d255-4f5b-9485-07c1ffae7403
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 198.95s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09143333385388057
+INFO:flwr:		round 2: 0.09143333385388057
+INFO:flwr:		round 3: 0.09029999872048695
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 734886a8-4d74-46bd-84bc-9075cc665289
+INFO:flwr:
+INFO:flwr:Received: reconnect message cf5b45f7-eacd-4596-b97e-9297ebf22f92
+INFO:flwr:
+INFO:flwr:Received: reconnect message 9596b7bc-df7e-457f-b9c7-d6492cc1bf2a
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message 971f7337-3b60-4cb4-a038-e63cba65f80f
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 35c92978-cded-4e13-be8e-91ad6aa180f1
+INFO:flwr:
+INFO:flwr:Received: train message 567d98c4-0962-48e3-939a-ee19299a2daa
+INFO:flwr:
+INFO:flwr:Received: train message 06aa64f1-1332-4f5d-b272-9b6b73fd8ec0
+INFO:flwr:aggregate_fit: received 0 results and 3 failures
+ERROR:root:Server failed: local variable 'fit_res' referenced before assignment
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message aecfea33-3264-4cf8-b83f-66a721d83514
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message f179013f-0c0a-4f2f-960c-61160a809dda
+INFO:flwr:
+INFO:flwr:Received: train message a05e5471-95a6-4edd-aac8-4dea0fa9fb37
+INFO:flwr:
+INFO:flwr:Received: train message a14e6fc8-b14c-40a0-862c-c86b6d6639fd
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 0df430b4-8bb7-4d84-8e65-560033ba5d9e
+INFO:flwr:
+INFO:flwr:Received: evaluate message 6a4761ed-2b15-406a-84c1-0dd1709d6f10
+INFO:flwr:
+INFO:flwr:Received: evaluate message 98c325fb-b990-435b-8bab-e1deb5247c4a
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 182b4481-ea33-4aa5-a73e-cef8d86bb0aa
+INFO:flwr:
+INFO:flwr:Received: train message be353432-0c03-4334-88de-f90602284b11
+INFO:flwr:
+INFO:flwr:Received: train message 800c6e63-3176-463b-9ce8-49227ffcaada
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 4b8138e9-3368-45c2-86b0-ffae79eb33b4
+INFO:flwr:
+INFO:flwr:Received: evaluate message 3066f0c4-4f86-4b2e-acc9-1021afd4af61
+INFO:flwr:
+INFO:flwr:Received: evaluate message a66de119-872c-43c6-ada3-78cb1e6fad6c
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 894d02c6-5acd-4048-9098-2a870ca78dc0
+INFO:flwr:
+INFO:flwr:Received: train message 45adc87a-d6ce-4346-8bf1-ab511606d678
+INFO:flwr:
+INFO:flwr:Received: train message 3d8884af-20cb-4bec-a27b-5282644b693e
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 51cf401d-ea41-48c1-9727-642ca143d59c
+INFO:flwr:
+INFO:flwr:Received: evaluate message b1a07297-a291-462e-b3fd-7fa4be16b998
+INFO:flwr:
+INFO:flwr:Received: evaluate message 19f17b98-ef6b-4c3e-be81-aa745169d2eb
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 820.18s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.08886666595935822
+INFO:flwr:		round 2: 0.08904166767994563
+INFO:flwr:		round 3: 0.08900166551272075
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 632eefff-f367-44fc-86d8-e959572efb22
+INFO:flwr:
+INFO:flwr:Received: reconnect message ef8331e4-47dd-4bf6-b28f-b9ebb53596f2
+INFO:flwr:
+INFO:flwr:Received: reconnect message 7eb6fd63-8953-4175-a82d-a43a88461725
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message 8e7aa0ae-836a-4c14-ae77-683c8d9c81be
+INFO:flwr:Sent reply
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+DEBUG:flwr:ChannelConnectivity.IDLE
+INFO:flwr:[ROUND 1]
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 47075c16-7422-4ab9-9e38-b289cdb3f13e
+INFO:flwr:
+INFO:flwr:Received: train message 0b08d232-39ce-4517-b6bb-3ad4976594f3
+INFO:flwr:
+INFO:flwr:Received: train message ac9d0645-df8c-4c41-a9f4-ab4ed2f7682a
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message d4f7b290-34a8-46fd-8d9e-078616583ee9
+INFO:flwr:
+INFO:flwr:Received: evaluate message 9c3e4d00-f45a-404d-a165-dcd69a3ab06b
+INFO:flwr:
+INFO:flwr:Received: evaluate message f469546c-dde4-4360-9531-b7d48a22d9ae
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 3b7168dc-a293-4b8c-a877-b9195adb9467
+INFO:flwr:
+INFO:flwr:Received: train message 67f234cb-da46-4fb7-a9cf-e0b06144c46d
+INFO:flwr:
+INFO:flwr:Received: train message d15716bc-51cd-4dae-87f4-1899939f3f96
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 121424ad-abf4-40cd-82a1-3306c7afba33
+INFO:flwr:
+INFO:flwr:Received: evaluate message 14336820-e7c9-47fe-b36e-96566839654a
+INFO:flwr:
+INFO:flwr:Received: evaluate message 840edb97-bff0-4de5-b5a3-a25a00f039da
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 74fdd160-f26a-4b5f-8888-eb621919e5fe
+INFO:flwr:
+INFO:flwr:Received: train message 5d3f47f6-2a42-4326-8860-8dc96133b249
+INFO:flwr:
+INFO:flwr:Received: train message ed0cd51b-94a4-41ce-bce2-c28c6d4a1d5c
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message f76d6ae4-d31f-47f6-a214-81efe3c91c0f
+INFO:flwr:
+INFO:flwr:Received: evaluate message dfe0a953-7da4-4fe2-bd8d-f7bb0a5fc6ed
+INFO:flwr:
+INFO:flwr:Received: evaluate message 8f353914-dde6-4624-a303-f1ddd3cf7bb9
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 226.33s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.091218334933122
+INFO:flwr:		round 2: 0.09130833049615224
+INFO:flwr:		round 3: 0.091218334933122
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 66cb7eb9-a6f1-4666-89bf-a8e2a4675f61
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 692ff9f6-b30a-4ddc-9f9d-2b59d4a39f9c
+INFO:flwr:Received: reconnect message 8b12d653-553a-46c8-b606-535ab45f13b0
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message ed6a0dd7-e55f-4bda-960c-6e5c5ead434a
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 21fb066a-2f78-4d9e-90e6-d439e5a08218
+INFO:flwr:
+INFO:flwr:Received: train message f57a0588-93c6-4832-9675-25b5f9a4ed23
+INFO:flwr:
+INFO:flwr:Received: train message e1edbf32-c72d-430a-8096-e2286955aaaa
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 7ab1433a-6679-4287-a0da-0b023bda4d62
+INFO:flwr:
+INFO:flwr:Received: evaluate message 2264f46c-596c-4269-86e5-3608201f21ed
+INFO:flwr:
+INFO:flwr:Received: evaluate message 7020422a-7699-442d-a726-47ae81ee410b
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message dbae84ab-839f-4be8-b6be-56b81d856a0a
+INFO:flwr:
+INFO:flwr:Received: train message 3bdec86a-20f6-4d24-bffd-24b227b930b2
+INFO:flwr:
+INFO:flwr:Received: train message 53de6d41-b626-4669-b2ee-517d37208959
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 5b23f64c-5f7d-4c35-92d0-631f8ed93c33
+INFO:flwr:
+INFO:flwr:Received: evaluate message 6e0ebbf6-2cec-4bd8-b612-b712809bfe3e
+INFO:flwr:
+INFO:flwr:Received: evaluate message 83a98cce-c609-4f99-a442-496274450028
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 829a2bf6-66ff-4372-be2c-061420f60a33
+INFO:flwr:
+INFO:flwr:Received: train message 9e7c168c-052e-41e3-913c-58196d574cf9
+INFO:flwr:
+INFO:flwr:Received: train message 0d516eef-abe6-42fa-a4c8-a093c0b567ce
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 75ac2a9a-1fb5-4c68-ad52-218c61440fe9
+INFO:flwr:
+INFO:flwr:Received: evaluate message 0f5e4d2e-8d05-4c14-8569-42f0df78c8b1
+INFO:flwr:
+INFO:flwr:Received: evaluate message 2f9087f0-9091-4d42-a1e1-7fa830776eb3
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 782.54s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.08796833455562592
+INFO:flwr:		round 2: 0.08796833455562592
+INFO:flwr:		round 3: 0.08773499975601833
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 2af2a011-409d-44d0-bf3c-ef040289ae3f
+INFO:flwr:
+INFO:flwr:Received: reconnect message b68e1e51-19bb-48f3-a711-54eed9608eef
+INFO:flwr:
+INFO:flwr:Received: reconnect message a2c2ee82-0a03-4321-a88a-253378cadefd
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message 7613f6ff-1862-4f42-8dc1-a8bfc34154b0
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:Sent reply
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 83c8cee7-d40b-4158-8b0d-a1ab6c6d09b8
+INFO:flwr:
+INFO:flwr:Received: train message 9536065e-0ca3-42ff-8f13-c266ed7d6302
+INFO:flwr:
+INFO:flwr:Received: train message b105f2fd-c4ca-4c3b-9b30-3bb72535dcfd
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 3d614963-a784-49ef-b1f0-c7dd54ac8f86
+INFO:flwr:
+INFO:flwr:Received: evaluate message 2778a9a2-ace3-4ba7-a91c-26c7981da641
+INFO:flwr:
+INFO:flwr:Received: evaluate message edadc1f5-c3ba-4ce1-af09-d039258beba3
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 49be598a-fca8-4028-aeab-9f82d2c0c07f
+INFO:flwr:
+INFO:flwr:Received: train message 10d2bd32-9e0f-4d53-b298-7701ac368fee
+INFO:flwr:
+INFO:flwr:Received: train message 1e305eb7-2b18-4ab0-a0d1-b761a5e682fe
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 3b3677c6-4554-485e-9654-08b130a38a5f
+INFO:flwr:
+INFO:flwr:Received: evaluate message 0e7eace4-6699-445b-9cac-276ac81aff9d
+INFO:flwr:
+INFO:flwr:Received: evaluate message b2323d0c-9825-4595-8701-ed34af80dcaa
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 240f4423-cc13-4d26-8a15-c24f6c783fa4
+INFO:flwr:
+INFO:flwr:Received: train message 596c303d-81af-465c-b1c3-6c6fa841d54f
+INFO:flwr:
+INFO:flwr:Received: train message ca18ee79-7bf7-4fd7-a488-5e1d2aeaabf7
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 0c8874ae-5f0c-4324-abfe-224b38909be3
+INFO:flwr:
+INFO:flwr:Received: evaluate message 90a5d993-76e8-48d1-87e6-325b2a451021
+INFO:flwr:
+INFO:flwr:Received: evaluate message 45b381b6-6aa5-4c36-8622-8248dd629d51
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 555.05s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.08819333215554555
+INFO:flwr:		round 2: 0.0873450015981992
+INFO:flwr:		round 3: 0.08812666684389114
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 8716905b-48a9-494f-a74c-a533cd09bc73
+INFO:flwr:
+INFO:flwr:Received: reconnect message e415ff6f-dad0-481f-a156-93758fa90c82
+INFO:flwr:
+INFO:flwr:Received: reconnect message a6da4c38-dc99-470b-b00e-1db03d85dfe8
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message 7b9ddc1b-b728-4bfe-b026-aba581e0e338
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: train message 19a38a89-bdad-48bd-845d-c859af75ba01
+INFO:flwr:
+INFO:flwr:Received: train message 63006beb-663b-4fb2-a3c7-ced4b27a063b
+INFO:flwr:
+INFO:flwr:Received: train message 42fbde53-3984-4a42-a75c-19d734db4e23
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 38c6b6c5-51da-4ac0-ac25-355cf2f63ee3
+INFO:flwr:
+INFO:flwr:Received: evaluate message 37548021-12b6-4111-b18f-75f8cf7b9199
+INFO:flwr:
+INFO:flwr:Received: evaluate message 8066a732-4f94-4559-847d-2d339ac65f4c
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 96d6ff47-dccb-41e2-870e-59cfde8cd61d
+INFO:flwr:
+INFO:flwr:Received: train message 26f69715-3bdc-4f8b-a890-70741f732ad7
+INFO:flwr:
+INFO:flwr:Received: train message 6619f7de-c438-472d-a0fb-bdb6f31d3f6e
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 2411a267-ee7d-42f3-bf67-e217cdd9f53b
+INFO:flwr:
+INFO:flwr:Received: evaluate message 5cdb27e6-9e86-48d2-b522-b336847696b6
+INFO:flwr:
+INFO:flwr:Received: evaluate message 392ecad5-7b6b-4db0-9c75-1166119b84d4
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message fef0e6f9-ae85-4604-828e-120ca02d4cd1
+INFO:flwr:
+INFO:flwr:Received: train message 3a7b84b3-3488-408b-8d06-74e62d47f7ad
+INFO:flwr:
+INFO:flwr:Received: train message 49f6c0fa-ffc8-4798-b7e1-64eca8e93c1e
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message ec494e56-5efc-4110-a710-bf4d41249fac
+INFO:flwr:
+INFO:flwr:Received: evaluate message 6bbb487d-98eb-4c38-b4f6-1141bb89edb6
+INFO:flwr:
+INFO:flwr:Received: evaluate message f340b39b-6313-4e21-960c-9c544e076a98
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 511.30s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.08654166758060455
+INFO:flwr:		round 2: 0.08654166758060455
+INFO:flwr:		round 3: 0.08741166442632675
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 6691c8df-fa12-42e1-909c-4f148aa87b3b
+INFO:flwr:
+INFO:flwr:Received: reconnect message 89e3213b-017c-4ada-9539-7fcf498fc48d
+INFO:flwr:
+INFO:flwr:Received: reconnect message f58d68bd-8a42-4261-9d12-86da82f10409
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message b1f12b28-47ed-49c9-8251-bd71865acb2b
+INFO:flwr:Sent reply
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message ee03f174-37c2-41a4-85c4-ed742fe2b393
+INFO:flwr:
+INFO:flwr:Received: train message d80b7377-4415-4f56-9cd9-5b566fe6787d
+INFO:flwr:
+INFO:flwr:Received: train message 7ca97901-1718-451d-a5df-777870ce070d
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 07419a18-61a1-48c6-99b6-65c082a26bc3
+INFO:flwr:
+INFO:flwr:Received: evaluate message 774d91ff-0c82-4230-8f33-5933249e9a76
+INFO:flwr:
+INFO:flwr:Received: evaluate message 81a50323-659f-4478-bbea-a649a1ee7116
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message a125af52-8695-4c18-8c8d-8b1e7757fd9b
+INFO:flwr:
+INFO:flwr:Received: train message 9837f493-9137-4cff-a61e-d014cb5e64e9
+INFO:flwr:
+INFO:flwr:Received: train message cc5c5d3d-4947-4afe-84d5-343ee6877be2
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message fec2a1a7-e676-4d3e-b2e7-e0e5def1ea67
+INFO:flwr:
+INFO:flwr:Received: evaluate message 74d1be1c-2feb-49bd-b134-c7ba8cfd35d9
+INFO:flwr:
+INFO:flwr:Received: evaluate message 46d2cc8b-9c65-4989-a0e3-b4760c304cbf
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message d404aed5-b206-41a9-89d5-b7ae375dda62
+INFO:flwr:
+INFO:flwr:Received: train message c3e34444-29c5-4a95-a9db-1f1ad6cd4c5f
+INFO:flwr:
+INFO:flwr:Received: train message cb52e73d-f67d-47a2-bbde-47940268aa6a
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message c4ec149c-234b-40e4-b7d2-f19914f87059
+INFO:flwr:
+INFO:flwr:Received: evaluate message ff460dc4-6bee-429a-84f3-f6a093672fdf
+INFO:flwr:
+INFO:flwr:Received: evaluate message 7cf98cca-2b49-451a-8b56-485ad60f3349
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 775.84s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.09000333398580551
+INFO:flwr:		round 2: 0.09000333398580551
+INFO:flwr:		round 3: 0.0902549996972084
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message 8ca28889-d215-4042-acc9-cad359ab6279
+INFO:flwr:
+INFO:flwr:Received: reconnect message f43cfa89-e662-4dc2-b52e-cdec042bc0a0
+INFO:flwr:
+INFO:flwr:Received: reconnect message 08733661-3b3e-4dcf-a3bc-898ec675dc3c
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+WARNING:flwr:DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+INFO:flwr:Starting Flower server, config: num_rounds=3, no round_timeout
+INFO:flwr:Flower ECE: gRPC server running (3 rounds), SSL is disabled
+INFO:flwr:[INIT]
+INFO:flwr:Requesting initial parameters from one random client
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.CONNECTING
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:
+INFO:flwr:Received: get_parameters message 18035a46-7ffb-4506-92ce-8a824ff9f425
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:Sent reply
+INFO:flwr:Received initial parameters from one random client
+INFO:flwr:Starting evaluation of initial global parameters
+INFO:flwr:Evaluation returned no results (`None`)
+INFO:flwr:
+INFO:flwr:[ROUND 1]
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+WARNING:flwr:DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+DEBUG:flwr:Opened insecure gRPC connection (no certificates were passed)
+DEBUG:flwr:ChannelConnectivity.IDLE
+DEBUG:flwr:ChannelConnectivity.READY
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 1c8a45a6-d684-43e0-bdf4-fc3081737c03
+INFO:flwr:
+INFO:flwr:Received: train message 3d679a2b-7342-4ab4-8a6d-367e50599413
+INFO:flwr:
+INFO:flwr:Received: train message 0d2ded7c-83a3-4a77-8a0c-40497ae7da68
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message a0a4e9ac-dce8-4c3e-8db7-ebf33211be3c
+INFO:flwr:
+INFO:flwr:Received: evaluate message 1ac47ef0-b6cb-4cb0-afed-9ce27e756d6b
+INFO:flwr:
+INFO:flwr:Received: evaluate message 08af5693-744e-434d-91a7-2035d10e68bb
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+WARNING:flwr:No evaluate_metrics_aggregation_fn provided
+INFO:flwr:
+INFO:flwr:[ROUND 2]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 96ce9de1-f8ad-41a0-b4d2-476523de9a72
+INFO:flwr:
+INFO:flwr:Received: train message d98cda67-6c1b-436b-92db-365bf815255f
+INFO:flwr:
+INFO:flwr:Received: train message d536c5f8-4fa0-494a-845a-c8f9fad5e263
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message 664cc89b-9d52-4d02-bc89-6f66c170b9f8
+INFO:flwr:
+INFO:flwr:Received: evaluate message 674b92b2-4177-4177-aa9f-910d4bc8854f
+INFO:flwr:
+INFO:flwr:Received: evaluate message 13c086c8-3ad6-4d5d-905b-5bd158053c65
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[ROUND 3]
+INFO:flwr:configure_fit: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: train message 8d98aa1a-ffb1-40e4-bf22-717d912f91a6
+INFO:flwr:
+INFO:flwr:Received: train message 5fb51f8c-cd9f-4eb7-8c6d-b561d270521b
+INFO:flwr:
+INFO:flwr:Received: train message 7e3d644c-6347-4ef7-ad01-5bee33fa3a60
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_fit: received 3 results and 0 failures
+INFO:flwr:configure_evaluate: strategy sampled 3 clients (out of 3)
+INFO:flwr:
+INFO:flwr:Received: evaluate message e154473b-bdad-4ccb-9a91-1198d06abbbf
+INFO:flwr:
+INFO:flwr:Received: evaluate message 1ded114e-9d12-4ae2-b5b8-6a0dd2611a90
+INFO:flwr:
+INFO:flwr:Received: evaluate message c76c269f-bd3d-4233-b47c-2b1a7dd0f2c3
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:Sent reply
+INFO:flwr:aggregate_evaluate: received 3 results and 0 failures
+INFO:flwr:
+INFO:flwr:[SUMMARY]
+INFO:flwr:Run finished 3 round(s) in 730.32s
+INFO:flwr:	History (loss, distributed):
+INFO:flwr:		round 1: 0.091109998524189
+INFO:flwr:		round 2: 0.09019000083208084
+INFO:flwr:		round 3: 0.09019000083208084
+INFO:flwr:
+INFO:flwr:
+INFO:flwr:Received: reconnect message e1575397-b3c2-4da3-a470-4028bd2538c2
+INFO:flwr:
+INFO:flwr:Received: reconnect message fc1833d4-645f-4413-a7f5-02aed8aa6fda
+INFO:flwr:
+INFO:flwr:Received: reconnect message d0fc934b-8d17-4444-b399-24b6776d4984
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
+DEBUG:flwr:gRPC channel closed
+INFO:flwr:Disconnect and shut down
